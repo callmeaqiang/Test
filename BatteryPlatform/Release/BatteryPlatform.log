@@ -1,0 +1,74 @@
+﻿生成启动时间为 2022/1/19 19:08:06。
+     1>项目“C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\BatteryPlatform.vcxproj”在节点 2 上(Build 个目标)。
+     1>QtVars:
+         WHERE /Q cl.exe
+         ("D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\bin\qmake.exe" -query) 1> props.txt 2> NUL
+         Reading Qt configuration (D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\bin\qmake.exe)
+         ("D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\bin\qmake.exe" "CONFIG -= debug release debug_and_release" "CONFIG += release") 1> qtvars.log 2>&1
+     1>项目“C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\BatteryPlatform.vcxproj”(1)正在节点 2 上生成“C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\BatteryPlatform.vcxproj”(1:2) (Build 个目标)。
+     1>QtRccSetDependencies:
+         "D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\bin\rcc.exe" --list "batteryplatform.qrc" > "Release\rcc_list.txt" 2> nul
+       QtRccSetDependencies:
+         "D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\bin\rcc.exe" --list "Resource.qrc" > "Release\rcc_list.txt" 2> nul
+       ClCompile:
+         D:\Code_Software\VS2015\VC\bin\CL.exe /c /IRelease\uic /IRelease\moc /IC:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\\BatteryPlatform /I.\ /I"F:\xlsx\build-qtxlsx-Desktop_Qt_5_9_9_MSVC2015_32bit-Debug\include" /I"F:\xlsx\build-qtxlsx-Desktop_Qt_5_9_9_MSVC2015_32bit-Debug\include\QtXlsx" /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtPrintSupport /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtWidgets /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtGui /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtANGLE /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtXml /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtNetwork /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtCore /I"D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\mkspecs\win32-msvc" /IRelease\moc /IRelease\uic /nologo /W1 /WX- /MP /O2 /Oy- /D UNICODE /D _UNICODE /D WIN32 /D QT_NO_DEBUG /D QT_XLSX_LIB /D QT_PRINTSUPPORT_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_NETWORK_LIB /D QT_CORE_LIB /D NDEBUG /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Data_WriteTOExecl.cpp
+         Data_WriteTOExecl.cpp
+       Link:
+         D:\Code_Software\VS2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\Release\BatteryPlatform.exe" /NOLOGO /LIBPATH:D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib /LIBPATH:C:\opensslx86\lib /LIBPATH:C:\Utils\my_sql\my_sqlx86\lib /LIBPATH:C:\Utils\postgresqlx86\pgsql\lib /LIBPATH:"F:\xlsx\build-qtxlsx-Desktop_Qt_5_9_9_MSVC2015_32bit-Debug\lib" D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\qtmain.lib shell32.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Xlsx.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5PrintSupport.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Widgets.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Gui.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Xml.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Network.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Core.lib "libzbar-0.lib" opencv_aruco430d.lib opencv_bgsegm430d.lib opencv_bioinspired430d.lib opencv_calib3d430d.lib opencv_ccalib430d.lib opencv_core430d.lib opencv_datasets430d.lib opencv_dnn_objdetect430d.lib opencv_dnn_superres430d.lib opencv_dnn430d.lib opencv_dpm430d.lib opencv_features2d430d.lib opencv_flann430d.lib opencv_highgui430d.lib opencv_fuzzy430d.lib opencv_gapi430d.lib opencv_hfs430d.lib opencv_img_hash430d.lib opencv_imgcodecs430d.lib opencv_imgproc430d.lib opencv_xphoto430d.lib opencv_xobjdetect430d.lib opencv_ximgproc430d.lib opencv_xfeatures2d430d.lib opencv_videostab430d.lib opencv_videoio430d.lib opencv_video430d.lib opencv_tracking430d.lib opencv_text430d.lib opencv_superres430d.lib opencv_structured_light430d.lib opencv_stitching430d.lib opencv_stereo430d.lib opencv_shape430d.lib opencv_saliency430d.lib opencv_rgbd430d.lib opencv_reg430d.lib opencv_rapid430d.lib opencv_quality430d.lib opencv_plot430d.lib opencv_photo430d.lib opencv_phase_unwrapping430d.lib opencv_optflow430d.lib opencv_objdetect430d.lib opencv_ml430d.lib opencv_line_descriptor430d.lib opencv_intensity_transform430d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\Release\BatteryPlatform.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\Release\BatteryPlatform.lib" /MACHINE:X86 /SAFESEH Release\batteryplatform.obj
+         Release\batterywarnningdialog.obj
+         Release\capacitytestdialog.obj
+         Release\chargeanddischargetestdialog.obj
+         Release\chargetestdialog.obj
+         Release\currentaccuracytestdialog.obj
+         Release\dataanalyze.obj
+         Release\datareceive.obj
+         Release\Data_WriteTOExecl.obj
+         Release\dischargetestdialog.obj
+         Release\globaldata.obj
+         Release\logsave.obj
+         Release\mainreference.obj
+         Release\message_box.obj
+         Release\PactInformation.obj
+         Release\painterplotwidget.obj
+         Release\processstatuswidget.obj
+         Release\protectionparametersdialog.obj
+         Release\qcustomplot.obj
+         Release\selfdefinecheckwidget.obj
+         Release\smokingtestdialog.obj
+         Release\soctestdialog.obj
+         Release\testinstructhandle.obj
+         Release\verifywidget.obj
+         Release\voltageaccuracytestdialog.obj
+         Release\main.obj
+         Release\qrc_batteryplatform.obj
+         Release\qrc_Resource.obj
+         Release\moc_batteryplatform.obj
+         Release\moc_soctestdialog.obj
+         Release\moc_smokingtestdialog.obj
+         Release\moc_voltageaccuracytestdialog.obj
+         Release\moc_batterywarnningdialog.obj
+         Release\moc_currentaccuracytestdialog.obj
+         Release\moc_Data_WriteTOExecl.obj
+         Release\moc_chargetestdialog.obj
+         Release\moc_dischargetestdialog.obj
+         Release\moc_processstatuswidget.obj
+         Release\moc_message_box.obj
+         Release\moc_capacitytestdialog.obj
+         Release\moc_chargeanddischargetestdialog.obj
+         Release\moc_painterplotwidget.obj
+         Release\moc_protectionparametersdialog.obj
+         Release\moc_testinstructhandle.obj
+         Release\moc_selfdefinecheckwidget.obj
+         Release\moc_verifywidget.obj
+         Release\moc_dataanalyze.obj
+         Release\moc_logsave.obj
+         Release\moc_datareceive.obj
+         Release\moc_mainreference.obj
+         Release\moc_qcustomplot.obj
+         BatteryPlatform.vcxproj -> C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\Release\BatteryPlatform.exe
+     1>已完成生成项目“C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\BatteryPlatform.vcxproj”(Build 个目标)的操作。
+     1>已完成生成项目“C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\BatteryPlatform.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:04.82

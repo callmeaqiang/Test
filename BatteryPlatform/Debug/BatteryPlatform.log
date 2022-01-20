@@ -1,0 +1,206 @@
+﻿生成启动时间为 2022/1/20 11:58:59。
+     1>项目“C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\BatteryPlatform.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>QtVars:
+         WHERE /Q cl.exe
+         ("D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\bin\qmake.exe" -query) 1> props.txt 2> NUL
+         Reading Qt configuration (D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\bin\qmake.exe)
+         ("D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\bin\qmake.exe" "CONFIG -= debug release debug_and_release" "CONFIG += debug") 1> qtvars.log 2>&1
+     1>项目“C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\BatteryPlatform.vcxproj”(1)正在节点 2 上生成“C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\BatteryPlatform.vcxproj”(1:2) (Build 个目标)。
+     1>QtRccSetDependencies:
+         "D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\bin\rcc.exe" --list "batteryplatform.qrc" > "Debug\rcc_list.txt" 2> nul
+       QtRccSetDependencies:
+         "D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\bin\rcc.exe" --list "Resource.qrc" > "Debug\rcc_list.txt" 2> nul
+       QtWork:
+         uic batterywarnningdialog.ui
+         uic capacitytestdialog.ui
+         uic chargeanddischargetestdialog.ui
+         uic chargetestdialog.ui
+         uic currentaccuracytestdialog.ui
+         uic batteryplatform.ui
+         uic dischargetestdialog.ui
+         uic mainreference.ui
+         uic message_box.ui
+         uic painterplotwidget.ui
+         uic processstatuswidget.ui
+         uic protectionparametersdialog.ui
+         uic selfdefinecheckwidget.ui
+         uic smokingtestdialog.ui
+         uic soctestdialog.ui
+         uic verifywidget.ui
+         uic voltageaccuracytestdialog.ui
+         rcc batteryplatform.qrc
+         rcc Resource.qrc
+         moc batteryplatform.h
+         moc soctestdialog.h
+         moc smokingtestdialog.h
+         moc voltageaccuracytestdialog.h
+         moc batterywarnningdialog.h
+         moc currentaccuracytestdialog.h
+         moc Data_WriteTOExecl.h
+         moc chargetestdialog.h
+         moc dischargetestdialog.h
+         moc processstatuswidget.h
+         moc message_box.h
+         moc capacitytestdialog.h
+         moc chargeanddischargetestdialog.h
+         moc painterplotwidget.h
+         moc protectionparametersdialog.h
+         moc testinstructhandle.h
+         moc selfdefinecheckwidget.h
+         moc verifywidget.h
+         moc dataanalyze.h
+         moc logsave.h
+         moc datareceive.h
+         moc mainreference.h
+         moc qcustomplot.h
+       ClCompile:
+         D:\Code_Software\VS2015\VC\bin\CL.exe /c /IDebug\uic /IDebug\moc /IC:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\\BatteryPlatform /I.\ /I"F:\xlsx\build-qtxlsx-Desktop_Qt_5_9_9_MSVC2015_32bit-Debug\include" /I"F:\xlsx\build-qtxlsx-Desktop_Qt_5_9_9_MSVC2015_32bit-Debug\include\QtXlsx" /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtPrintSupport /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtWidgets /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtGui /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtANGLE /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtXml /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtNetwork /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtCore /I"D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\mkspecs\win32-msvc" /IDebug\moc /IDebug\uic /Zi /nologo /W1 /WX- /MP /Od /Oy- /D UNICODE /D _UNICODE /D WIN32 /D QT_XLSX_LIB /D QT_PRINTSUPPORT_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_NETWORK_LIB /D QT_CORE_LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /wd4819 /analyze- /errorReport:prompt batteryplatform.cpp batterywarnningdialog.cpp capacitytestdialog.cpp chargeanddischargetestdialog.cpp chargetestdialog.cpp currentaccuracytestdialog.cpp dataanalyze.cpp datareceive.cpp Data_WriteTOExecl.cpp dischargetestdialog.cpp globaldata.cpp logsave.cpp mainreference.cpp message_box.cpp PactInformation.cpp painterplotwidget.cpp processstatuswidget.cpp protectionparametersdialog.cpp qcustomplot.cpp selfdefinecheckwidget.cpp smokingtestdialog.cpp soctestdialog.cpp testinstructhandle.cpp verifywidget.cpp voltageaccuracytestdialog.cpp main.cpp
+         batteryplatform.cpp
+         batterywarnningdialog.cpp
+         capacitytestdialog.cpp
+         chargeanddischargetestdialog.cpp
+         chargetestdialog.cpp
+         currentaccuracytestdialog.cpp
+         dataanalyze.cpp
+         datareceive.cpp
+         Data_WriteTOExecl.cpp
+         dischargetestdialog.cpp
+         globaldata.cpp
+         logsave.cpp
+         mainreference.cpp
+         message_box.cpp
+         PactInformation.cpp
+         painterplotwidget.cpp
+         processstatuswidget.cpp
+         protectionparametersdialog.cpp
+         qcustomplot.cpp
+         selfdefinecheckwidget.cpp
+         smokingtestdialog.cpp
+         soctestdialog.cpp
+         testinstructhandle.cpp
+         verifywidget.cpp
+         voltageaccuracytestdialog.cpp
+         main.cpp
+     1>D:\Code_Software\VS2015\VC\include\xutility(2230): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\include\xutility(2216): note: 参见“std::_Copy_impl”的声明 (编译源文件 qcustomplot.cpp)
+         qcustomplot.cpp(20927): note: 参见对正在编译的函数 模板 实例化“_OutIt std::copy<const QCPGraphData*,QCPGraphData*>(_InIt,_InIt,_OutIt)”的引用
+                 with
+                 [
+                     _OutIt=QCPGraphData *,
+                     _InIt=const QCPGraphData *
+                 ]
+         D:\Code_Software\VS2015\VC\include\xutility(2216): note: 参见“std::_Copy_impl”的声明 (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\include\xutility(2216): note: 参见“std::_Copy_impl”的声明 (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\include\xutility(2216): note: 参见“std::_Copy_impl”的声明 (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\include\xutility(2216): note: 参见“std::_Copy_impl”的声明 (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\include\xutility(2216): note: 参见“std::_Copy_impl”的声明 (编译源文件 qcustomplot.cpp)
+     1>D:\Code_Software\VS2015\VC\include\xutility(2507): warning C4996: 'std::_Copy_backward': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\include\xutility(2493): note: 参见“std::_Copy_backward”的声明 (编译源文件 qcustomplot.cpp)
+         c:\users\aqiang\desktop\batteryplatform\batteryplatform\batteryplatform\qcustomplot.h(3192): note: 参见对正在编译的函数 模板 实例化“_BidIt2 std::copy_backward<QCPGraphData*,QCPGraphData*>(_BidIt1,_BidIt1,_BidIt2)”的引用
+                 with
+                 [
+                     _BidIt2=QCPGraphData *,
+                     _BidIt1=QCPGraphData *
+                 ] (编译源文件 qcustomplot.cpp)
+         c:\users\aqiang\desktop\batteryplatform\batteryplatform\batteryplatform\qcustomplot.h(3182): note: 编译类 模板 成员函数“void QCPDataContainer<QCPGraphData>::preallocateGrow(int)”时 (编译源文件 qcustomplot.cpp)
+         c:\users\aqiang\desktop\batteryplatform\batteryplatform\batteryplatform\qcustomplot.h(2741): note: 参见对正在编译的函数 模板 实例化“void QCPDataContainer<QCPGraphData>::preallocateGrow(int)”的引用 (编译源文件 qcustomplot.cpp)
+         c:\users\aqiang\desktop\batteryplatform\batteryplatform\batteryplatform\qcustomplot.h(2734): note: 编译类 模板 成员函数“void QCPDataContainer<QCPGraphData>::add(const DataType &)”时
+                 with
+                 [
+                     DataType=QCPGraphData
+                 ] (编译源文件 qcustomplot.cpp)
+         qcustomplot.cpp(20259): note: 参见对正在编译的函数 模板 实例化“void QCPDataContainer<QCPGraphData>::add(const DataType &)”的引用
+                 with
+                 [
+                     DataType=QCPGraphData
+                 ]
+         c:\users\aqiang\desktop\batteryplatform\batteryplatform\batteryplatform\qcustomplot.h(5225): note: 参见对正在编译的类 模板 实例化“QCPDataContainer<QCPGraphData>”的引用 (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\include\xutility(2493): note: 参见“std::_Copy_backward”的声明 (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\include\xutility(2493): note: 参见“std::_Copy_backward”的声明 (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\include\xutility(2493): note: 参见“std::_Copy_backward”的声明 (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\include\xutility(2493): note: 参见“std::_Copy_backward”的声明 (编译源文件 qcustomplot.cpp)
+         D:\Code_Software\VS2015\VC\bin\CL.exe /c /IDebug\uic /IDebug\moc /IC:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\ /IC:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\\BatteryPlatform /I.\ /I"F:\xlsx\build-qtxlsx-Desktop_Qt_5_9_9_MSVC2015_32bit-Debug\include" /I"F:\xlsx\build-qtxlsx-Desktop_Qt_5_9_9_MSVC2015_32bit-Debug\include\QtXlsx" /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtPrintSupport /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtWidgets /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtGui /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtANGLE /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtXml /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtNetwork /ID:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include\QtCore /I"D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\mkspecs\win32-msvc" /IDebug\moc /IDebug\uic /Zi /nologo /W1 /WX- /MP /Od /Oy- /D UNICODE /D _UNICODE /D WIN32 /D QT_XLSX_LIB /D QT_PRINTSUPPORT_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_NETWORK_LIB /D QT_CORE_LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /wd4819 /analyze- /errorReport:prompt Debug\\rcc\qrc_batteryplatform.cpp Debug\\rcc\qrc_Resource.cpp Debug\\moc\moc_batteryplatform.cpp Debug\\moc\moc_soctestdialog.cpp Debug\\moc\moc_smokingtestdialog.cpp Debug\\moc\moc_voltageaccuracytestdialog.cpp Debug\\moc\moc_batterywarnningdialog.cpp Debug\\moc\moc_currentaccuracytestdialog.cpp Debug\\moc\moc_Data_WriteTOExecl.cpp Debug\\moc\moc_chargetestdialog.cpp Debug\\moc\moc_dischargetestdialog.cpp Debug\\moc\moc_processstatuswidget.cpp Debug\\moc\moc_message_box.cpp Debug\\moc\moc_capacitytestdialog.cpp Debug\\moc\moc_chargeanddischargetestdialog.cpp Debug\\moc\moc_painterplotwidget.cpp Debug\\moc\moc_protectionparametersdialog.cpp Debug\\moc\moc_testinstructhandle.cpp Debug\\moc\moc_selfdefinecheckwidget.cpp Debug\\moc\moc_verifywidget.cpp Debug\\moc\moc_dataanalyze.cpp Debug\\moc\moc_logsave.cpp Debug\\moc\moc_datareceive.cpp Debug\\moc\moc_mainreference.cpp Debug\\moc\moc_qcustomplot.cpp
+         qrc_batteryplatform.cpp
+         qrc_Resource.cpp
+         moc_batteryplatform.cpp
+         moc_soctestdialog.cpp
+         moc_smokingtestdialog.cpp
+         moc_voltageaccuracytestdialog.cpp
+         moc_batterywarnningdialog.cpp
+         moc_currentaccuracytestdialog.cpp
+         moc_Data_WriteTOExecl.cpp
+         moc_chargetestdialog.cpp
+         moc_dischargetestdialog.cpp
+         moc_processstatuswidget.cpp
+         moc_message_box.cpp
+         moc_capacitytestdialog.cpp
+         moc_chargeanddischargetestdialog.cpp
+         moc_painterplotwidget.cpp
+         moc_protectionparametersdialog.cpp
+         moc_testinstructhandle.cpp
+         moc_selfdefinecheckwidget.cpp
+         moc_verifywidget.cpp
+         moc_dataanalyze.cpp
+         moc_logsave.cpp
+         moc_datareceive.cpp
+         moc_mainreference.cpp
+         moc_qcustomplot.cpp
+       Link:
+         D:\Code_Software\VS2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\Debug\BatteryPlatform.exe" /NOLOGO /LIBPATH:D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib /LIBPATH:C:\opensslx86\lib /LIBPATH:C:\Utils\my_sql\my_sqlx86\lib /LIBPATH:C:\Utils\postgresqlx86\pgsql\lib /LIBPATH:"F:\xlsx\build-qtxlsx-Desktop_Qt_5_9_9_MSVC2015_32bit-Debug\lib" D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\qtmaind.lib shell32.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Xlsxd.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5PrintSupportd.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Widgetsd.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Guid.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Xmld.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Networkd.lib D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib\Qt5Cored.lib "libzbar-0.lib" opencv_aruco430d.lib opencv_bgsegm430d.lib opencv_bioinspired430d.lib opencv_calib3d430d.lib opencv_ccalib430d.lib opencv_core430d.lib opencv_datasets430d.lib opencv_dnn_objdetect430d.lib opencv_dnn_superres430d.lib opencv_dnn430d.lib opencv_dpm430d.lib opencv_features2d430d.lib opencv_flann430d.lib opencv_highgui430d.lib opencv_fuzzy430d.lib opencv_gapi430d.lib opencv_hfs430d.lib opencv_img_hash430d.lib opencv_imgcodecs430d.lib opencv_imgproc430d.lib opencv_xphoto430d.lib opencv_xobjdetect430d.lib opencv_ximgproc430d.lib opencv_xfeatures2d430d.lib opencv_videostab430d.lib opencv_videoio430d.lib opencv_video430d.lib opencv_tracking430d.lib opencv_text430d.lib opencv_superres430d.lib opencv_structured_light430d.lib opencv_stitching430d.lib opencv_stereo430d.lib opencv_shape430d.lib opencv_saliency430d.lib opencv_rgbd430d.lib opencv_reg430d.lib opencv_rapid430d.lib opencv_quality430d.lib opencv_plot430d.lib opencv_photo430d.lib opencv_phase_unwrapping430d.lib opencv_optflow430d.lib opencv_objdetect430d.lib opencv_ml430d.lib opencv_line_descriptor430d.lib opencv_intensity_transform430d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\Debug\BatteryPlatform.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\Debug\BatteryPlatform.lib" /MACHINE:X86 /SAFESEH Debug\batteryplatform.obj
+         Debug\batterywarnningdialog.obj
+         Debug\capacitytestdialog.obj
+         Debug\chargeanddischargetestdialog.obj
+         Debug\chargetestdialog.obj
+         Debug\currentaccuracytestdialog.obj
+         Debug\dataanalyze.obj
+         Debug\datareceive.obj
+         Debug\Data_WriteTOExecl.obj
+         Debug\dischargetestdialog.obj
+         Debug\globaldata.obj
+         Debug\logsave.obj
+         Debug\mainreference.obj
+         Debug\message_box.obj
+         Debug\PactInformation.obj
+         Debug\painterplotwidget.obj
+         Debug\processstatuswidget.obj
+         Debug\protectionparametersdialog.obj
+         Debug\qcustomplot.obj
+         Debug\selfdefinecheckwidget.obj
+         Debug\smokingtestdialog.obj
+         Debug\soctestdialog.obj
+         Debug\testinstructhandle.obj
+         Debug\verifywidget.obj
+         Debug\voltageaccuracytestdialog.obj
+         Debug\main.obj
+         Debug\qrc_batteryplatform.obj
+         Debug\qrc_Resource.obj
+         Debug\moc_batteryplatform.obj
+         Debug\moc_soctestdialog.obj
+         Debug\moc_smokingtestdialog.obj
+         Debug\moc_voltageaccuracytestdialog.obj
+         Debug\moc_batterywarnningdialog.obj
+         Debug\moc_currentaccuracytestdialog.obj
+         Debug\moc_Data_WriteTOExecl.obj
+         Debug\moc_chargetestdialog.obj
+         Debug\moc_dischargetestdialog.obj
+         Debug\moc_processstatuswidget.obj
+         Debug\moc_message_box.obj
+         Debug\moc_capacitytestdialog.obj
+         Debug\moc_chargeanddischargetestdialog.obj
+         Debug\moc_painterplotwidget.obj
+         Debug\moc_protectionparametersdialog.obj
+         Debug\moc_testinstructhandle.obj
+         Debug\moc_selfdefinecheckwidget.obj
+         Debug\moc_verifywidget.obj
+         Debug\moc_dataanalyze.obj
+         Debug\moc_logsave.obj
+         Debug\moc_datareceive.obj
+         Debug\moc_mainreference.obj
+         Debug\moc_qcustomplot.obj
+         BatteryPlatform.vcxproj -> C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\Debug\BatteryPlatform.exe
+     1>已完成生成项目“C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\BatteryPlatform.vcxproj”(Build 个目标)的操作。
+     1>已完成生成项目“C:\Users\aqiang\Desktop\BatteryPlatform\BatteryPlatform\BatteryPlatform\BatteryPlatform.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:51.57

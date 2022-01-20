@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/BatteryPlatform">
+        <file>batteryplatform_zh.qm</file>
+    </qresource>
+    <qresource prefix="/res">
+        <file>res/close_red.png</file>
+        <file>res/battery.png</file>
+        <file>res/warning.png</file>
+        <file>res/default.png</file>
+        <file>res/information.png</file>
+        <file>res/filepath.png</file>
+    </qresource>
+</RCC>

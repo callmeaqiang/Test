@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="batteryplatform.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="batteryplatform.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="batteryplatform.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtRcc Include="Resource.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dataanalyze.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logsave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="datareceive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="batteryplatform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainreference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcustomplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PactInformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="verifywidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="selfdefinecheckwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testinstructhandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="globaldata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="batterywarnningdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="currentaccuracytestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="voltageaccuracytestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Data_WriteTOExecl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="processstatuswidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message_box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chargetestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dischargetestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smokingtestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="capacitytestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chargeanddischargetestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="soctestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="painterplotwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="protectionparametersdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CustomDataType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PactInformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globaldata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="dataanalyze.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="logsave.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="datareceive.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="mainreference.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qcustomplot.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="verifywidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="selfdefinecheckwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="testinstructhandle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="batterywarnningdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="currentaccuracytestdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="voltageaccuracytestdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Data_WriteTOExecl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="processstatuswidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="message_box.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="chargetestdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dischargetestdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="smokingtestdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="capacitytestdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="chargeanddischargetestdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="soctestdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="painterplotwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="protectionparametersdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="mainreference.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="verifywidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="selfdefinecheckwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="batterywarnningdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="currentaccuracytestdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="voltageaccuracytestdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="processstatuswidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="message_box.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="dischargetestdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="chargetestdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="smokingtestdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="capacitytestdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="chargeanddischargetestdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="soctestdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="painterplotwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="protectionparametersdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtTranslation Include="batteryplatform_zh.ts">
+      <Filter>Translation Files</Filter>
+    </QtTranslation>
+  </ItemGroup>
+</Project>

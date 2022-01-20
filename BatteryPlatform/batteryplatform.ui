@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BatteryPlatformClass</class>
+ <widget class="QMainWindow" name="BatteryPlatformClass">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1532</width>
+    <height>931</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BatteryPlatform</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="batteryplatform.qrc">
+    <normaloff>:/res/res/battery.png</normaloff>:/res/res/battery.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{	
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>60</width>
+    <height>60</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="page">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#StartBtn, #Verify_Btn, #TurnToUIBtn{
+	
+	background-color: rgb(88, 88, 88);
+    border-radius: 8px;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover#StartBtn, :hover#Verify_Btn, :hover#TurnToUIBtn
+{   	
+	background-color: rgb(70, 70, 70);
+}
+QPushButton:pressed#StartBtn ,:pressed#Verify_Btn,:pressed#TurnToUIBtn{   
+	
+	background-color: rgb(70, 70, 70);
+    padding-left:8px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:8px;
+}
+QPushButton#pushButton_path{
+background:rgba(0,0,0,0);
+border:1px solid rgba(0,0,0,0);
+
+}
+QPushButton:pressed#pushButton_path{
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}
+QWidget#widget
+{
+	
+	background-color: rgb(255, 255, 255);
+}
+
+</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="1" column="0">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>212</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="1">
+            <widget class="QGroupBox" name="groupBox">
+             <property name="styleSheet">
+              <string notr="true">font: 16pt &quot;微软雅黑&quot;;
+</string>
+             </property>
+             <property name="title">
+              <string>Communication setting</string>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <property name="spacing">
+               <number>10</number>
+              </property>
+              <property name="leftMargin">
+               <number>10</number>
+              </property>
+              <property name="topMargin">
+               <number>10</number>
+              </property>
+              <property name="rightMargin">
+               <number>10</number>
+              </property>
+              <property name="bottomMargin">
+               <number>10</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <property name="spacing">
+                 <number>2</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_5">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 18pt &quot;微软雅黑&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Choose Pact：</string>
+                  </property>
+                  <property name="textFormat">
+                   <enum>Qt::AutoText</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="PactBox">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 14pt &quot;微软雅黑&quot;;</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Please choose pact type</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="0,0">
+                <property name="spacing">
+                 <number>2</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 18pt &quot;微软雅黑&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Charge Voltage</string>
+                  </property>
+                  <property name="textFormat">
+                   <enum>Qt::AutoText</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_CVoltage">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::StrongFocus</enum>
+                  </property>
+                  <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="readOnly">
+                   <bool>false</bool>
+                  </property>
+                  <property name="placeholderText">
+                   <string>/V</string>
+                  </property>
+                  <property name="cursorMoveStyle">
+                   <enum>Qt::LogicalMoveStyle</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0,0">
+                <property name="spacing">
+                 <number>2</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 18pt &quot;微软雅黑&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Battery Capacity</string>
+                  </property>
+                  <property name="textFormat">
+                   <enum>Qt::AutoText</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_Capacity">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::StrongFocus</enum>
+                  </property>
+                  <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="readOnly">
+                   <bool>false</bool>
+                  </property>
+                  <property name="placeholderText">
+                   <string>/Ah</string>
+                  </property>
+                  <property name="cursorMoveStyle">
+                   <enum>Qt::LogicalMoveStyle</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <property name="spacing">
+                 <number>2</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 18pt &quot;微软雅黑&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Report Path</string>
+                  </property>
+                  <property name="textFormat">
+                   <enum>Qt::AutoText</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_log_path">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_path">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="batteryplatform.qrc">
+                    <normaloff>:/res/res/filepath.png</normaloff>:/res/res/filepath.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>40</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <spacer name="horizontalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="StartBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string>Save</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Verify_Btn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string>Verify</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="TurnToUIBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string>Turn to UI</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>211</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="1">
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>169</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="1">
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>169</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1532</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Start</string>
+    </property>
+    <addaction name="ReturnHome"/>
+    <addaction name="separator"/>
+    <addaction name="Closeexe"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionVerify_Data"/>
+    <addaction name="actionUI"/>
+   </widget>
+   <widget class="QMenu" name="menuAddTest">
+    <property name="title">
+     <string>AddTest</string>
+    </property>
+    <addaction name="actioninsistance"/>
+    <addaction name="separator"/>
+    <addaction name="actiondischargeAccuracyTests"/>
+    <addaction name="separator"/>
+    <addaction name="actionchargeAccuracyTest"/>
+    <addaction name="separator"/>
+    <addaction name="actionVoltage_Accuracy_Test"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuAddTest"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="ReturnHome">
+   <property name="text">
+    <string>Communication Setting</string>
+   </property>
+  </action>
+  <action name="Closeexe">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actioninsistance">
+   <property name="text">
+    <string>Charge Test</string>
+   </property>
+  </action>
+  <action name="actionchargeAccuracyTest">
+   <property name="text">
+    <string>Current Accuracy Test</string>
+   </property>
+  </action>
+  <action name="actiondischargeAccuracyTests">
+   <property name="text">
+    <string>Discharge Test</string>
+   </property>
+  </action>
+  <action name="actionVoltage_Accuracy_Test">
+   <property name="text">
+    <string>Voltage Accuracy Test</string>
+   </property>
+  </action>
+  <action name="actionVerify_Data">
+   <property name="text">
+    <string>Verify Data</string>
+   </property>
+  </action>
+  <action name="actionUI">
+   <property name="text">
+    <string>UI</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="batteryplatform.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BF5A22E7-5AA9-46E3-8D47-E9B849D79633}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
+    <QtInstall>Qt5.9.9_msvc2015</QtInstall>
+    <QtModules>core;xml;network;gui;widgets;printsupport;xlsx;</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+    <QtRunLUpdateOnBuild>true</QtRunLUpdateOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
+    <QtInstall>Qt5.9.9_msvc2015</QtInstall>
+    <QtModules>core;xml;network;gui;widgets;printsupport;xlsx;</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <IncludePath>D:\Software\Code_Software\QT5.9\5.9.9\msvc2015\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <IncludePath>D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Code_Software\Qt5.9.9\5.9.9\msvc2015\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2015_64</QtInstall>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\BatteryPlatform;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Code_Software\Qt5.9.9\5.9.9\msvc2015_64\include;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\BatteryPlatform;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="batteryplatform.cpp" />
+    <ClCompile Include="batterywarnningdialog.cpp" />
+    <ClCompile Include="capacitytestdialog.cpp" />
+    <ClCompile Include="chargeanddischargetestdialog.cpp" />
+    <ClCompile Include="chargetestdialog.cpp" />
+    <ClCompile Include="currentaccuracytestdialog.cpp" />
+    <ClCompile Include="dataanalyze.cpp" />
+    <ClCompile Include="datareceive.cpp" />
+    <ClCompile Include="Data_WriteTOExecl.cpp" />
+    <ClCompile Include="dischargetestdialog.cpp" />
+    <ClCompile Include="globaldata.cpp" />
+    <ClCompile Include="logsave.cpp" />
+    <ClCompile Include="mainreference.cpp" />
+    <ClCompile Include="message_box.cpp" />
+    <ClCompile Include="PactInformation.cpp" />
+    <ClCompile Include="painterplotwidget.cpp" />
+    <ClCompile Include="processstatuswidget.cpp" />
+    <ClCompile Include="protectionparametersdialog.cpp" />
+    <ClCompile Include="qcustomplot.cpp" />
+    <ClCompile Include="selfdefinecheckwidget.cpp" />
+    <ClCompile Include="smokingtestdialog.cpp" />
+    <ClCompile Include="soctestdialog.cpp" />
+    <ClCompile Include="testinstructhandle.cpp" />
+    <ClCompile Include="verifywidget.cpp" />
+    <ClCompile Include="voltageaccuracytestdialog.cpp" />
+    <QtRcc Include="batteryplatform.qrc" />
+    <QtRcc Include="Resource.qrc" />
+    <QtUic Include="batterywarnningdialog.ui" />
+    <QtUic Include="capacitytestdialog.ui" />
+    <QtUic Include="chargeanddischargetestdialog.ui" />
+    <QtUic Include="chargetestdialog.ui" />
+    <QtUic Include="currentaccuracytestdialog.ui" />
+    <QtUic Include="batteryplatform.ui" />
+    <QtMoc Include="batteryplatform.h" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="dischargetestdialog.ui" />
+    <QtUic Include="mainreference.ui" />
+    <QtUic Include="message_box.ui" />
+    <QtUic Include="painterplotwidget.ui" />
+    <QtUic Include="processstatuswidget.ui" />
+    <QtUic Include="protectionparametersdialog.ui" />
+    <QtUic Include="selfdefinecheckwidget.ui" />
+    <QtUic Include="smokingtestdialog.ui" />
+    <QtUic Include="soctestdialog.ui" />
+    <QtUic Include="verifywidget.ui" />
+    <QtUic Include="voltageaccuracytestdialog.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="soctestdialog.h" />
+    <QtMoc Include="smokingtestdialog.h" />
+    <QtMoc Include="voltageaccuracytestdialog.h" />
+    <QtMoc Include="batterywarnningdialog.h" />
+    <QtMoc Include="currentaccuracytestdialog.h" />
+    <QtMoc Include="Data_WriteTOExecl.h" />
+    <QtMoc Include="chargetestdialog.h" />
+    <QtMoc Include="dischargetestdialog.h" />
+    <QtMoc Include="processstatuswidget.h" />
+    <QtMoc Include="message_box.h" />
+    <QtMoc Include="capacitytestdialog.h" />
+    <QtMoc Include="chargeanddischargetestdialog.h" />
+    <ClInclude Include="globaldata.h" />
+    <QtMoc Include="painterplotwidget.h" />
+    <QtMoc Include="protectionparametersdialog.h" />
+    <ClInclude Include="resource.h" />
+    <QtMoc Include="testinstructhandle.h" />
+    <QtMoc Include="selfdefinecheckwidget.h" />
+    <QtMoc Include="verifywidget.h" />
+    <QtMoc Include="dataanalyze.h" />
+    <QtMoc Include="logsave.h" />
+    <QtMoc Include="datareceive.h" />
+    <ClInclude Include="CustomDataType.h" />
+    <QtMoc Include="mainreference.h" />
+    <QtMoc Include="qcustomplot.h" />
+    <ClInclude Include="PactInformation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtTranslation Include="batteryplatform_zh.ts" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
